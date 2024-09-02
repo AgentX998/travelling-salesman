@@ -1,10 +1,3 @@
-import sys
-import os
-
-# Add the project root directory to sys.path
-sys.path.append('/Users/muhammadabdullahshahid/p3.10/test-travelling-salesman-problem-main')
-#print(os.path.dirname(os.path.abspath(__file__)))
-
 import numpy as np
 import tqdm
 
