@@ -39,7 +39,7 @@ class HPNSolver(BaseSolver):
         self.critic = HPN(n_feature=2, n_hidden=128) # instantiate model to handle metric 2-d geographic TSP problems
         self.critic = self.critic.to(self.device)
         self.critic.eval() # set the model to evaluate
-        checkpoint = torch.load('/Users/muhammadabdullahshahid/p3.10/test-travelling-salesman-problem-main/'+weights_fp, map_location=self.device)
+        checkpoint = torch.load(weights_fp, map_location=self.device)
         self.critic.load_state_dict(checkpoint['model_baseline']) # load in base model
 
     def post_process(self,B,route,graph,size,visited_indices):
