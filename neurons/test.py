@@ -17,3 +17,4 @@ if __name__ == '__main__':
     print("CHRIST:", data[:, 4].mean())
     print("Min:", data[:, 5].mean())
     print("NEW:", data[:, 6].mean())
+    print("Min 1:", data[:, 7].mean())
