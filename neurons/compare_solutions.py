@@ -86,6 +86,8 @@ def compare():
     min_score = min(scores)
     scores.append(min_score)
     scores.append(scoring_solution(new_synapse))
+    min_score1 = min(scores)
+    scores.append(min_score1)
 
     return scores
 
